@@ -9,100 +9,136 @@
       src="https://kit.fontawesome.com/7d40050c21.js"
       crossorigin="anonymous"
     ></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
-    <header id="header" class="header colorPrincipal">
-      <a href="./index.html">
-        <img
-          class="logo"
-          src="./assets/img/cerohuellaRedondoVerde.jpg"
-          alt=" logo Cero Huella- Rock&Vida, un circulo con una huella de zapato"
-        />
-        <!--<img class="logoRV"    src="./assets/img/R&V Logo Verde 1024(2).png" alt="">-->
-      </a>
-
-      <nav>
-        <ul>
-          <li><a href="#">INICIO</a></li>
-          <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-          <li><a href="./pages/productos.html">PRODUCTOS</a></li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-          <li>
-            <a href="./pages/carrito.html">
-              <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
-            </a>
-          </li>
-        </ul>
+    <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark py-0">
+        <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/rcerohuellaredondoverde_2.png"
+            alt=""
+            width="75"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="contenedorIndex">
-        <h1>UN COMPROMISO CON EL PLANETA</h1>
+      <section
+        class="container-fluid  d-flex flex-column justify-content-center align-items-center pt-3 bg-img fs-6"
+      >
+        <h1 class="text-center pb-3">UN COMPROMISO CON EL PLANETA</h1>
         <img
-          class="logoRV"
+          class="logoRockVerde"
           src="./assets/img/R&V Logo Verde 1024(2).png"
           alt=""
         />
-        <!-- <img class="logoRV"  src="./assets/img/Logo Cero Huella Horiz.png" alt="">-->
-        <div class="anchoContenidoIndex">
-          <p>
+        <div class="divBlur w-75 text-center m-4 pb-4">
+          <p class="p-3">
             Innovación que respeta el medio ambiente. Creamos piezas únicas que
             minimizan nuestra huella ecológica.
           </p>
-          <a class="boton" href="./pages/productos.html">NUESTROS PRODUCTOS </a>
+          <a class="btn-primary p-1" href="./pages/productos.html"
+            >NUESTROS PRODUCTOS
+          </a>
         </div>
       </section>
-  
 
-      <section class="seccionProductosIndex">
-        <h2>CALIDAD Y SOSTENIBILIDAD EN CADA ELECCIÓN</h2>
-        <p>
+      <!--SEGUNDA SECCION-->
+      <section
+        class="container-fluid mb-1  d-flex flex-column justify-content-center align-items-center pt-5 fs-6"
+      >
+        <h2 class="text-center pb-3">
+          CALIDAD Y SOSTENIBILIDAD EN CADA ELECCIÓN
+        </h2>
+        <p class="text-center w-75 p-3">
           Serie de productos amigables con el medio ambiente, que reutilizan
           material reciclado, aportando en ellos innovación y generando una
           economía circular.
         </p>
-        <div class="tarjetaCategorias">
-          <div>
-            <a href="./pages/productos.html#bolsas">
+        <div class="row justify-content-center align-items-center row-cols-1 row-cols-md-4 gx-3">
+          <div class="col altDivCards">
+            <div class="card">
               <img
-                src="./assets/img/bolsasDeResiduos.jpg"
-                alt=""
-                loading="lazy"
+                src="./assets/img/bolsasderesiduos_pequeña.jpg"
+                class="card-img-top altImgCards"
+                alt="..."
               />
-              <h3>BOLSAS DE RESIDUOS</h3>
-            </a>
+              <div class="card-body p-2">
+                <h6 class="card-title w-100 text-center">BOLSAS DE RESIDUOS</h6>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <a href="./pages/productos.html#bolsas">
-              <img src="./assets/img/lamparasLed.jpg" alt="" loading="lazy" />
-              <h3>LAMPARAS LED</h3>
-            </a>
+          <div class="col altDivCards">
+            <div class="card">
+              <img src="./assets/img/lamparasLed.jpg"" class="card-img-top
+              altImgCards " alt="...">
+              <div class="card-body p-2">
+                <h6 class="card-title text-center">LÁMPARAS LED</h6>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <a href="./pages/productos.html#reutilizables">
-              <img src="./assets/img/ecoMacetas.jpg" alt="" loading="lazy" />
-              <h3>REUTILIZABLES</h3>
-            </a>
-          </div>
-
-          <div>
-            <a href="./pages/productos.html#biodegradables">
+          <div class="col altDivCards">
+            <div class="card">
               <img
                 src="./assets/img/macetaPlantable.jpg"
-                alt=""
-                oading="lazy"
+                class="card-img-top altImgCards"
+                alt="..."
               />
-              <h3>BIODEGRADABLES</h3>
-            </a>
+              <div class="card-body p-2">
+                <h6 class="card-title text-center">BIODEGRADABLES</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col altDivCards">
+            <div class="card">
+              <img src="./assets/img/ecoMacetas.jpg"" class="card-img-top
+              altImgCards" alt="...">
+              <div class="card-body p-2">
+                <h6 class="card-title text-center">REUTILIZABLES</h6>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="seccionContacto">
-        <h2>ESTAMOS AQUI PARA AYUDARTE</h2>
-        <div class="anchoContenidoIndex">
+      <section class="container-fluid  d-flex flex-column justify-content-center align-items-center pt-3 bg-imgContacto fs-6">
+        <h2 class="text-center pb-3">ESTAMOS AQUI PARA AYUDARTE</h2>
+        <div class="divBlur w-75 text-center m-4 pb-4">
           <p>
             ¿Tienes preguntas, sugerencias o simplemente quieres saber más sobre
             nuestros productos? No dudes en ponerte en contacto con nosotros. Tu
@@ -110,7 +146,9 @@
             formulario a continuación o envíanos un correo electrónico, y te
             responderemos lo antes posible.
           </p>
-          <a class="boton" href="./pages/contacto.html">Contáctanos</a>
+          <a class="btn-primary p-1" href="./pages/contacto.html"
+            >Contáctanos</a
+          >
         </div>
       </section>
       <section class="nosotros">
@@ -119,7 +157,7 @@
           <div class="imagenIndexNosotros">
             <img src="./assets/img/manoECircular.jpg" />
           </div>
-          <div class="textoIndexNosotros">
+          <div class="divBlur w-75 text-center m-4 pb-4"">
             <p>
               En Cero Huella, somos un grupo de entusiastas comprometidos con la
               sostenibilidad. Nuestra misión es inspirar a otros a hacer
@@ -127,7 +165,9 @@
               la concienciación son clave para un cambio positivo, y trabajamos
               cada día para ofrecerte las mejores soluciones ecológicas.
             </p>
-            <a class="boton" href="./pages/nosotros.html">Conócenos</a>
+            <a class="btn-primary p-1" href="./pages/nosotros.html"
+              >Conócenos</a
+            >
           </div>
         </div>
       </section>
@@ -207,11 +247,10 @@
             </a>
           </li>
           <li>
-              <a href="https://www.rockandvida.com.ar/" target="_blank">
-                <i class="fa-solid fa-globe fa-xl" ></i>
-              </a>
+            <a href="https://www.rockandvida.com.ar/" target="_blank">
+              <i class="fa-solid fa-globe fa-xl"></i>
+            </a>
           </li>
-          
         </ul>
       </div>
       <div>
@@ -229,6 +268,7 @@
         </p>
       </div>
     </footer>
-    
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

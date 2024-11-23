@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet');
+
+:root {
+  --bs-font-sans-serif: "Encode Sans", sans-serif;
+  --bs-primario: #7cb744fa;
+  --bs-secundario: #58585a;
+}
+h1,
+h2,
+h5,
+h6 {
+  font-weight: 700;
+}
+a,
+p {
+  font-weight: 600;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+
+.navbar {
+  background-color: var(--bs-primario);
+}
+
+.bg-img {
+  background-image: url(../assets/img/plantas_1920.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 90vh;
+  color: white;
+}
+.logoRockVerde {
+  background-color: rgba(255, 255, 255, 0.726);
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+}
+.divBlur {
+  backdrop-filter: blur(15px);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-primario);
+  border-color: var(--bs-primario);
+}
+
+.card {
+  box-shadow: -11px 14px 34px -6px rgba(69, 61, 61, 0.89);
+}
+
+.altDivCards {
+  height: 97vh;
+  width: 50%;
+}
+.altImgCards {
+  height: 90%;
+}
+.card-title {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .row-cols-md-4 > * {
+    flex: 0 0  auto;
+    width: 25%;
+    div {
+      height: 460px;
+      width: 100% ;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .card-body{
+      width: 75%;
+    }
+  }
+}
+.bg-imgContacto {
+  background-image: url(../assets/img/huella_co2.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: 90vh;
+  color: white;
+}
+
