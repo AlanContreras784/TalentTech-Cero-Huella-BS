@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,54 +14,56 @@
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
-    <header id="header" class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark py-0">
+    <header  class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container-fluid ">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/img/rcerohuellaredondoverde_2.png"
-            alt=""
-            width="75"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/rcerohuellaredondoverde_2.png"
+              alt=""
+              width="75"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> 
       </nav>
     </header>
+
+    
     <main>
-      <section
-        class="container-fluid  d-flex flex-column justify-content-center align-items-center pt-3 bg-img fs-6"
-      >
+      <!-- PRIMERA SECCION-->
+      <section class="container-fluid  d-flex flex-column justify-content-center align-items-center pt-3 bg-img fs-6">
         <h1 class="text-center pb-3">UN COMPROMISO CON EL PLANETA</h1>
         <img
           class="logoRockVerde"
@@ -80,8 +82,9 @@
       </section>
 
       <!--SEGUNDA SECCION-->
+        
       <section
-        class="container-fluid mb-1  d-flex flex-column justify-content-center align-items-center pt-5 fs-6"
+        class="container  d-flex flex-column justify-content-center align-items-center  fs-6"
       >
         <h2 class="text-center pb-3">
           CALIDAD Y SOSTENIBILIDAD EN CADA ELECCIÓN
@@ -106,17 +109,16 @@
           </div>
           <div class="col altDivCards">
             <div class="card">
-              <img src="./assets/img/lamparasLed.jpg"" class="card-img-top
-              altImgCards " alt="...">
+              <img src="./assets/img/lamparasled_pequeña.jpg"" class="card-img-top altImgCards " alt="...">
               <div class="card-body p-2">
-                <h6 class="card-title text-center">LÁMPARAS LED</h6>
+                <h6 class="card-title w-100 text-center">LÁMPARAS LED</h6>
               </div>
             </div>
           </div>
           <div class="col altDivCards">
             <div class="card">
               <img
-                src="./assets/img/macetaPlantable.jpg"
+                src="./assets/img/macetaplantable_pequeña.jpg"
                 class="card-img-top altImgCards"
                 alt="..."
               />
@@ -127,7 +129,7 @@
           </div>
           <div class="col altDivCards">
             <div class="card">
-              <img src="./assets/img/ecoMacetas.jpg"" class="card-img-top
+              <img src="./assets/img/ecomacetas_pequeña.jpg"" class="card-img-top
               altImgCards" alt="...">
               <div class="card-body p-2">
                 <h6 class="card-title text-center">REUTILIZABLES</h6>
@@ -136,6 +138,8 @@
           </div>
         </div>
       </section>
+
+      <!--   
       <section class="container-fluid  d-flex flex-column justify-content-center align-items-center pt-3 bg-imgContacto fs-6">
         <h2 class="text-center pb-3">ESTAMOS AQUI PARA AYUDARTE</h2>
         <div class="divBlur w-75 text-center m-4 pb-4">
@@ -151,13 +155,13 @@
           >
         </div>
       </section>
-      <section class="nosotros">
+      <section class="">
         <h2>UN EQUIPO APASIONADO POR EL MEDIO AMBIENTE</h2>
-        <div class="seccionNosotros">
+        <div class="">
           <div class="imagenIndexNosotros">
             <img src="./assets/img/manoECircular.jpg" />
           </div>
-          <div class="divBlur w-75 text-center m-4 pb-4"">
+          <div class=""">
             <p>
               En Cero Huella, somos un grupo de entusiastas comprometidos con la
               sostenibilidad. Nuestra misión es inspirar a otros a hacer
@@ -172,18 +176,7 @@
         </div>
       </section>
     </main>
-    <!-- <section>
-      <aside>
-        <article>
-          <header>cabecera del articulo</header>
-          <h1>esto es correcto!!!</h1>
-          <p>aca podria ir una noticia</p>
-          <footer>pie del articulo</footer>
-        </article>
-      </aside>
-    </section>
-  -->
-    <footer class="footer colorSecundario">
+    <footer class="">
       <div>
         <a href="./index.html">
           <img
@@ -196,12 +189,12 @@
       </div>
       <address>
         <p>
-          <span class="fuenteNegrita">Dirección:</span> Cnel. Pagola 3880, C1437
+          <span class="">Dirección:</span> Cnel. Pagola 3880, C1437
           Cdad. Autónoma de Buenos Aires
         </p>
-        <p><span class="fuenteNegrita">Teléfono:</span> +54 9 11 5997-3967</p>
+        <p><span class="">Teléfono:</span> +54 9 11 5997-3967</p>
         <p>
-          <span class="fuenteNegrita">Correo electrónico:</span>
+          <span class="">Correo electrónico:</span>
           cerohuella@rockyvida.com
         </p>
       </address>
@@ -268,6 +261,7 @@
         </p>
       </div>
     </footer>
+   -->
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>

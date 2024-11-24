@@ -9,7 +9,7 @@ h1,
 h2,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 600;
 }
 a,
 p {
@@ -24,6 +24,8 @@ p {
 body {
   font-family: var(--bs-font-sans-serif);
 }
+
+
 
 .navbar {
   background-color: var(--bs-primario);
@@ -75,6 +77,11 @@ body {
 .card-title {
   margin-bottom: 0;
 }
+
+.col {
+  flex: 0 1 content;
+}
+
 @media (min-width: 768px) {
   .row-cols-md-4 > * {
     flex: 0 0  auto;
@@ -98,4 +105,3 @@ body {
   height: 90vh;
   color: white;
 }
-
