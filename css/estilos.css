@@ -4,15 +4,19 @@
   --bs-font-sans-serif: "Encode Sans", sans-serif;
   --bs-primario: #7cb744fa;
   --bs-secundario: #58585a;
+  --bs-terciario: #53abe0;
 }
 h1,
-h2,
+h2{
+  font-weight: 600;
+}
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 550;
 }
 a,
 p {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -23,9 +27,8 @@ p {
 }
 body {
   font-family: var(--bs-font-sans-serif);
+  
 }
-
-
 
 .navbar {
   background-color: var(--bs-primario);
@@ -88,35 +91,6 @@ body {
     }
   }
 }
-
-
-/*
-
-.altDivCards {
-  height: 85vh;
-  width: 50%;
-}
-.altImgCards {
-  height: 90%;
-}
-.card-title {
-  margin-bottom: 0;
-}
-*/
-
-@media (min-width: 768px) {
-
-  .row-cols-md-auto > * {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-  
-}
-
-
-
-
-
 .bg-imgContacto {
 
   background-image: url(../assets/img/huella_co2.png);
@@ -127,3 +101,67 @@ body {
   color: white;
 }
 
+.imagenIndexNosotros{
+  background-image: url(../assets/img/manoECircular.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+.altoFilaNosotrosIndex{
+  height: 60vh;
+}
+
+.altoFilaNosotrosIndex > *{
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .altoFilaNosotrosIndex{
+    height: initial;
+    .imagenIndexNosotros{
+      height: 50vh;
+    }
+  }
+  
+  
+}
+.seccionNosotro{
+  background-color: var(--bs-terciario);
+  color: white;
+}
+.footer{
+  background-color: var(--bs-secundario);
+  color: #fff;
+  
+  a{
+    color: #fff;;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--bs-primario);
+  }
+
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  .fa-whatsapp {
+    color: #4da637;
+    font-size: 64px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .contenedorWatsapp {
+    text-align: center;
+    background: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+  }
+  .row>*{
+    padding-left: 0px;
+  }
+
+}
