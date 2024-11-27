@@ -120,10 +120,8 @@ body {
     height: initial;
     .imagenIndexNosotros{
       height: 50vh;
-    }
+    } 
   }
-  
-  
 }
 .seccionNosotro{
   background-color: var(--bs-terciario);
