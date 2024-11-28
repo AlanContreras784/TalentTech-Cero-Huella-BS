@@ -5,9 +5,25 @@
   --bs-primario: #7cb744fa;
   --bs-secundario: #58585a;
   --bs-terciario: #53abe0;
+  --bs-gradiente: radial-gradient(
+    circle,
+    #7cb744,
+    #41bc73,
+    #00bd9f,
+    #00bbc2,
+    #00b5d6,
+    #3bbad7,
+    #56bfd8,
+    #6bc4d9,
+    #90d4d4,
+    #b6e1d4,
+    #daeede,
+    #f7fbf2
+  );
 }
 h1,
 h2{
+  text-align: center;
   font-weight: 600;
 }
 h5,
@@ -16,9 +32,21 @@ h6 {
 }
 a,
 p {
+  text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
 }
+.bg-primario{
+  background-color: var(--bs-primario);
+}
+.bg-secunadrio{
+  background-color: var(--bs-secundario);
+}
+.bg-gradiente{
+  background-image: var(--bs-gradiente);
+}
+
+
 
 .header {
   position: sticky;
@@ -119,7 +147,7 @@ body {
   .altoFilaNosotrosIndex{
     height: initial;
     .imagenIndexNosotros{
-      height: 50vh;
+      height: 40vh;
     } 
   }
 }
