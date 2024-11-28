@@ -41,7 +41,6 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
-  height: 90vh;
   color: white;
 }
 .logoRockVerde {
@@ -107,12 +106,13 @@ body {
   background-image: url(../assets/img/manoECircular.jpg);
   background-size: cover;
   background-repeat: repeat;
+  background-position: center center;
 }
 .altoFilaNosotrosIndex{
   height: 60vh;
 }
 
-.altoFilaNosotrosIndex > *{
+.altoFilaNosotrosIndex > * {
   height: 100%;
 }
 @media screen and (max-width: 768px) {
