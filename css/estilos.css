@@ -45,6 +45,9 @@ p {
 .bg-gradiente{
   background-image: var(--bs-gradiente);
 }
+.bg-terciario{
+  background-color:var(--bs-terciario) ;
+}
 
 
 
@@ -93,6 +96,7 @@ body {
   color: #fff;
   background-color: var(--bs-primario);
   border-color: var(--bs-primario);
+
 }
 .tarjetaCategorias {
   padding: 50px;
@@ -192,4 +196,46 @@ body {
     padding-left: 0px;
   }
 
+}
+
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 380px;
+    box-shadow: -11px 14px 34px -6px rgba(69, 61, 61, 0.89);
+    border-radius: 5px;
+    padding: 10px;
+
+    img {
+      border-radius: 5px;
+      width: 100%;
+      height: 85%;
+    }
+    p {
+      text-align: center;
+      margin: 4px;
+    }
+    a {
+      display: inline-block;
+      border-radius: 6px;
+      text-decoration: none;
+      color: rgb(102, 95, 95);
+      border: 2px, solid, rgb(150, 144, 144);
+      box-shadow: -11px 14px 34px -6px rgba(69, 61, 61, 0.89);
+      padding-left: 2px;
+      padding-right: 2px;
+      margin: 4px;
+    }
+  }
 }
