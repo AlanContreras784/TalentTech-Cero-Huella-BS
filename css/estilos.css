@@ -239,6 +239,9 @@ body {
     }
   }
 }
+.anchoFormulario{
+  width: 80vw;
+}
 .form-check-label {
   margin-bottom: 0.5rem;
   color: white;
