@@ -246,3 +246,7 @@ body {
   margin-bottom: 0.5rem;
   color: white;
 }
+
+.alturaTextTarea{
+  height: 100px;
+}
