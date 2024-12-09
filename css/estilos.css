@@ -250,3 +250,10 @@ body {
 .alturaTextTarea{
   height: 100px;
 }
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
