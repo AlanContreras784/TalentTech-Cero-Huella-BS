@@ -30,7 +30,6 @@ h5,
 h6 {
   font-weight: 550;
 }
-a,
 p {
   text-align: center;
   font-size: 1.1rem;
@@ -257,3 +256,41 @@ body {
   text-align: center;
 }
 
+.menu>li {
+  position: relative;
+  display: inline-block;
+
+}
+
+.menu>li>a {
+  display: block
+}
+
+.menu li a:hover {
+  color: #ce7d35;
+  transition: all 0.3s;
+}
+
+.submenu {
+  position: absolute;
+  width: 150px;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 3.5s;
+  text-align: left;
+  top: 100%;
+  left: 0px;
+  
+}
+
+.submenu li a {
+  display: block;
+  color:white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
