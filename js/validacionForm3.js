@@ -115,8 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('users', JSON.stringify(users));
         window.location.href = 'inicioSesion.html';
         console.log(localStorage);
+
         */
-    })
+        
+        alert("Muchas gracias por enviar el formulario")
+        document.fRegistro.submit()
+        return 0
+    }) 
 })
 
 function volverInicio() {

@@ -276,7 +276,7 @@ body {
   width: 150px;
   visibility: visible;
   opacity: 0;
-  transition: opacity 3.5s;
+  transition: opacity 1.5s;
   text-align: left;
   top: 100%;
   left: 0px;

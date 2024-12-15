@@ -58,21 +58,6 @@ function validarEnviar() {
         }
     }
 
-    //Validar la edad. tiene que ser entero mayor que 18
-    /*edad = document.fvalida.edad.value
-    edad = validarEntero(edad)
-    document.fvalida.edad.value = edad
-    if (edad == "") {
-        alert("Tiene que introducir un número entero en su edad.")
-        document.fvalida.edad.focus()
-        return 0
-    } else {
-        if (edad < 18) {
-            alert("Debe ser mayor de 18 años.")
-            document.fvalida.edad.focus()
-            return 0
-        }
-    }*/
 
     //Validar Ciudad
     if (document.fvalida.ciudad.value.length == 0) {
@@ -87,22 +72,7 @@ function validarEnviar() {
         document.fvalida.residencia.focus()
         return 0
     }
-/*
-    //Valido interes
-    if (document.fvalida.so[0].checked == true || document.fvalida.so[1].checked == true || document.fvalida.so[2].checked == true || document.fvalida.so[3].checked == true) {
-    } else {  //Si al menos uno de los opciones de consulta no está marcado....
-        alert("Selecciona una o mas Opciones Consulta")
-        document.fvalida.so[0].focus()
-        return 0
-    }
 
-    if (document.fvalida.rb[0].checked == true || document.fvalida.rb[1].checked == true || document.fvalida.rb[2].checked == true || document.fvalida.rb[3].checked == true) {
-    } else {  //Si al menos uno de los opciones de consulta no está marcado....
-        alert("Selecciona solo una Opción")
-        document.fvalida.rb[0].focus()
-        return 0
-    }
-*/
 
 if (document.fvalida.comentarios.value.length == 0) {
     alert("Escriba su consulta Porfavor")
@@ -141,15 +111,3 @@ function esMail(dato) {
 function esTelefono(dato) {
     return expresiones.telefono.test(dato)
 }
-
-/*function pedirPasswoord(){
-    var paswoord;
-    do{
-        paswoord= prompt("Escriba la contraseña")
-        if(paswoord==1234){
-            alert("Contraseña Correcta")
-        }else{
-        alert("Contraseña Inconrrecta")
-        }
-    }while(paswoord != '1234')
-}*/
