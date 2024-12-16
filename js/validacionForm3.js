@@ -1,137 +1,109 @@
-const expresiones = {
+
     //usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-    //nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+ const letrasRegEx=/^[a-zA-ZÀ-ÿ\s]{1,40}$/// Letras y espacios, pueden llevar acentos.
     //password: /^.{4,12}$/, // 4 a 12 digitos.
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    numeroTelefono: /^\d{7,14}$/ // 7 a 14 numeros.
-}
+ const emailRegEx=/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+ const numerosRegEx=/^\d{7,14}$/// 7 a 14 numeros.
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('#contenedorFormulario');
-    const errorMenssage = document.querySelector('#error-menssage');
+const formulario = document.getElementById("contenedorFormulario");
+
+formulario.addEventListener("submit",evento => {
+    evento.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const apellido = document.getElementById("apellido").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const ciudad = document.getElementById("ciudad").value.trim();
+    const provincia = document.getElementById("provincia").value.trim();
+    const comentarios = document.getElementById("comentarios").value.trim();
+    const terminos = document.getElementById("terminos").checked;
 
 
-    form.addEventListener('submit', (evento) => {
-        evento.preventDefault();
-        const nombre = form.nombre.value;
-        const apellido = form.apellido.value;
-        const email= form.email.value;
-        const numeroTelefonico = form.numeroTelefonico.value;
-        const ciudad = form.ciudad.value;
-        const residencia = form.residencia.value;
-        const comentarios = form.comentarios.value;
-        const terminos = form.terminos.checked;
+    const errorNombre = document.getElementById("errorNombre");
+    const errorApellido = document.getElementById("errorApellido");
+    const errorEmail = document.getElementById("errorEmail");
+    const errorTelefono = document.getElementById("errorTelefono");
+    const errorCiudad = document.getElementById("errorCiudad");
+    const errorProvincia = document.getElementById("errorProvincia");
+    const errorComentarios = document.getElementById("errorComentarios");
+    const errorTerminos = document.getElementById("errorTerminos");
+
+    let formularioValido = true;
+    
+    if (!letrasRegEx.test(nombre)){
+        errorNombre.classList.remove("d-none");
+        contenedorFormulario.nombre.focus();
+        formularioValido = false;
+    }else{
+        errorNombre.classList.add("d-none");
+    }
+
+    if(!letrasRegEx.test(apellido)){
+        errorApellido.classList.remove("d-none");
+        contenedorFormulario.apellido.focus();
+        formularioValido = false;
+    }else{
+        errorApellido.classList.add( "d-none")
+    }
+
+    if(!emailRegEx.test(email)){
+        errorEmail.classList.remove("d-none");
+        contenedorFormulario.email.focus();
+        formularioValido = false;
+    }else{
+        errorEmail.classList.add("d-none");
+    }
+
+    if(!numerosRegEx.test(telefono)){
+        errorTelefono.classList.remove("d-none");
+        contenedorFormulario.telefono.focus();
+        formularioValido = false;
+    }else{
+        errorTelefono.classList.add("d-none");
+    }
+
+    if(!letrasRegEx.test(ciudad)){
+        errorCiudad.classList.remove("d-none");
+        contenedorFormulario.ciudad.focus();
+        formularioValido = false;
+    }else{
+        errorCiudad.classList.add("d-none");
+    }
+
+    if(provincia == 0){
+        errorProvincia.classList.remove("d-none");
+        contenedorFormulario.provincia.focus();
+        formularioValido = false;
+    }else{
+        errorProvincia.classList.add("d-none");
+    }
+
+    if(!letrasRegEx.test(comentarios)){
+        errorComentarios.classList.remove("d-none");
+        contenedorFormulario.comentarios.focus();
+        formularioValido = false;
+    }else{
+        errorComentarios.classList.add("d-none");
+    }
+
+    if(terminos == false){
+        errorTerminos.classList.remove("d-none");
+        contenedorFormulario.terminos.focus();
+        formularioValido = false;
+    }else{
+        errorTerminos.classList.add("d-none");
+    }
+
+    if(formularioValido){
+        alert("Formulario enviado correctamente")
+        return;
+    }
 
 
-        // VALIDAR Nombre
-        if (nombre === "") {
-            errorMenssage.textContent = "Escriba su Nombre";
-            document.fRegistro.nombre.focus()
-            return;
-        } 
-        //VALIDAR APELLIDO
-        if (apellido === "") {
-            errorMenssage.textContent = "Escriba su Apellido";
-            document.fRegistro.apellido.focus()
-            return;
-        }
+    
 
-        // VALIDAR CORREO
-        correo = email
-        correo = esMail(correo)
-
-        if (email == "") {
-            errorMenssage.textContent = "Escriba su Email";
-            document.fRegistro.email.focus()
-            return ;
-        } else {
-            if (correo == false) {
-                errorMenssage.textContent = "El formato no coincide: ejemplo@email.com";
-                document.fRegistro.email.focus()
-                return ;
-            }
-        }
-
-        //VALIDAR TELEFONO
-        telefono = numeroTelefonico;
-        telefono = esTelefono(telefono)
-
-        if (numeroTelefonico =="") {
-            errorMenssage.textContent = "Escriba su Telefono";
-            document.fRegistro.telefono.focus()
-            return ;
-        } else{
-            if (telefono == false) {
-            errorMenssage.textContent = "El Telefono tiene que tener entre 7 a 14 números";
-            document.fRegistro.telefono.focus()
-            return ;
-            }
-        }
-
-        //VALIDAR CIUDAD
-        if (ciudad === "") {
-            errorMenssage.textContent = "Escriba su Ciudad";
-            document.fRegistro.ciudad.focus()
-            return;
-        }
-
-        //VALIDAR PROVINCIA
-
-        if (residencia == 0) {
-            errorMenssage.textContent = "Eliga una Provincia";
-            document.fRegistro.residencia.focus()
-            return;
-        }
-
-        if (comentarios === "") {
-            errorMenssage.textContent = "Escriba su Comentario";
-            document.fRegistro.comentarios.focus()
-            return;
-        } 
-
-
-        if(terminos === false) {
-            errorMenssage.textContent = "Acepte terminos y Condiciones";
-            document.fRegistro.terminos.focus()
-            return;
-        }
-
-        
-        /*
-        //Guardar el usuario en el Localstorage
-        const users = JSON.parse(localStorage.getItem('users')) || [];
-        const existingUser = users.find((user) => user.username === username)
-        if (existingUser) {
-            errorMenssage.textContent = "El usuario ya existe";
-            return;
-        }
-        const newUser = {
-            username,
-            password
-        }
-        users.push(newUser);
-        localStorage.setItem('users', JSON.stringify(users));
-        window.location.href = 'inicioSesion.html';
-        console.log(localStorage);
-
-        */
-        
-        alert("Muchas gracias por enviar el formulario")
-        document.fRegistro.submit()
-        return 0
-    }) 
 })
 
-function volverInicio() {
-    window.location.href = '/index.html'
-
-}
-
-function esMail(dato) {
-    return expresiones.correo.test(dato)
-}
-function esTelefono(dato) {
-    return expresiones.numeroTelefono.test(dato)
-}

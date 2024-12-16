@@ -63,43 +63,52 @@
           <h1 class="py-3">CONTÁCTANOS</h1>
           <p class="text-center ">Estamos aqui para Ayudarte</p>
         </div>
-        <form class="row  g-3 needs-validation was-valited " id="contenedorFormulario" name="fRegistro"  action="https://formspree.io/f/xnnqyzpr"
+        <form class="row  g-3 needs-validation was-valited " id="contenedorFormulario" name="fRegistro" 
         method="POST">
           <div class="col-md-6 py-2">
             <input type="text" class="form-control"  id="nombre" name="nombre"  placeholder="Nombres" >
-            
+            <small class="text-danger d-none "  id="errorNombre"> Escribe tu Nombre</small>
           </div>
           <div class="col-md-6 py-2 ">
             <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellidos" >
+            <small class="text-danger d-none" id="errorApellido"> Escribe tu Apellido</small>
           </div>
           <div class="col-md-7 py-2">
             <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@email.com" >
+            <small class="text-danger d-none" id="errorEmail"> Escribe un email valido: ejemplo@email.com</small>
           </div>
           <div class="col-md-5 py-2">
-            <input type="text" class="form-control" id="telefono" name="numeroTelefonico" placeholder="Número Telefónico" >
+            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Número Telefónico" >
+            <small class="text-danger d-none"  id="errorTelefono"> Escribe tu Número de Telefono</small>
           </div>
           <div class="col-md-6 py-2">
             <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <small class="text-danger d-none" id="errorCiudad"> Escribe tu Ciudad</small>
           </div>
           <div class="col-md-6 py-2">
-            <select class="form-select" id="residencia" name="residencia" >
+            <select class="form-select" id="provincia" name="provincia" >
               <option value="0" >Elige tu Provincia...</option>
               <option value="1">...</option>
             </select>
+            <small class="text-danger d-none" id="errorProvincia"> Elige una Provincia</small>
           </div>
           <div class="col-12 py-2">
             <textarea class="form-control h-120" id="comentarios" name="comentarios" placeholder="Agregue su comentario" ></textarea>
-
+            <small class="text-danger d-none" id="errorComentarios"> Escribe tu Comentario</small>
           </div>
           <div class="col-12 ">
             <div class="form-check">
               <input class="form-check-input pt-0 " type="checkbox"  id="terminos" name="terminos" >
-              <label class="form-check-label"  for="invalidCheck">
+              <label class="form-check-label" >
                 Acepto Términos y Condiciones.
               </label>
+              <div>
+                <small class="text-danger d-none" id="errorTerminos"> Acepte los Términos y Condiciones</small>
+              </div>
+              
             </div>
           </div>
-          <div class="error py-0" id="error-menssage"></div>
+         <!--<div class="error py-0" id="error-menssage"></div> --> 
 
           <div class="col py-0 d-flex justify-content-center align-items-center">
             <input class="btn btn-primary px-5" type="submit" value="Enviar" name="Enviar" id="botonEnviar""></input>
