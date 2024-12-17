@@ -246,8 +246,11 @@ body {
   color: white;
 }
 
+
+
 .alturaTextTarea{
-  height: 100px;
+  field-sizing: content;
+  width: 420px;
 }
 
 .error {
@@ -293,4 +296,39 @@ body {
 .menu li:hover .submenu {
   visibility: visible;
   opacity: 1;
+}
+
+.widget-1 {
+  color: white;
+  font-style: bold;
+  font-weight: bold;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.widget-1 .usuarioApi {
+  margin: 5px;
+  text-align: center;
+  border: 1px solid rgb(231, 231, 237);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.usuario{
+  border: white, solid, 2px;
+  border-radius: 10px;
+  margin: 10px;
+  p{
+    font-size: 1rem;
+  }
+  img{
+    width: 180px;
+    border-radius: 50%;
+  }
 }

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td>${producto.nombre}</td>
                 <td>$${producto.precio}</td>
                 <td>
-                    <button class="btn btn-danger btn-sm" data-index="${index}">Eliminar</button>
+                    <button class="btn btn-secondary btn-sm" data-index="${index}">Eliminar</button>
                 </td>
             `;
             tablaCarrito.appendChild(fila);
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Añadimos un event listener al elemento con ID `tablaCarrito`.
         // Este listener detecta un click en cualquier parte del cuerpo de la tabla.
     
-        if (event.target.classList.contains("btn-danger")) { 
+        if (event.target.classList.contains("btn-secondary")) { 
             // Verificamos si el elemento clicado (`event.target`) tiene la clase `btn-danger`.
             // Esto asegura que solo reaccione a clicks en los botones "Eliminar".
     
