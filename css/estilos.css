@@ -332,3 +332,14 @@ body {
     border-radius: 50%;
   }
 }
+
+/*ESTILO PARA IMAGENES DEL CARRUSEL*/
+
+.carousel-item{
+  height: 60vh;
+}
+
+.carousel-item img{
+  height: 100%;
+  object-fit: cover;
+}
