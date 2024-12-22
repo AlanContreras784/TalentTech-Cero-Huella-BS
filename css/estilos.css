@@ -35,6 +35,8 @@ p {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+/*ESTILOS DE BACKGROUND*/
 .bg-primario{
   background-color: var(--bs-primario);
 }
@@ -66,6 +68,7 @@ body {
   background-color: var(--bs-primario);
 }
 
+/*IMAGEN Y ESTILOS PRIMERA SECCION*/
 .bg-img {
   background-image: url(../assets/img/plantas_1920.jpg);
   background-size: cover;
@@ -83,6 +86,8 @@ body {
   backdrop-filter: blur(15px);
 }
 
+
+/*ESTILO DE BOTONES*/
 .btn-primary {
   color: #fff;
   background-color: transparent;
@@ -97,6 +102,9 @@ body {
   border-color: var(--bs-primario);
 
 }
+
+
+/*ESTILOS DE TARJETAS*/
 .tarjetaCategorias {
   padding: 50px;
   display: flex;
@@ -123,6 +131,8 @@ body {
     }
   }
 }
+
+/*IMAGEN DE CONTACTO EN EL INDEX*/
 .bg-imgContacto {
 
   background-image: url(../assets/img/huella_co2.png);
@@ -133,6 +143,8 @@ body {
   color: white;
 }
 
+
+/*ESTILO PAGINA NOSOTROS*/
 .imagenIndexNosotros{
   background-image: url(../assets/img/manoECircular.jpg);
   background-size: cover;
@@ -158,6 +170,8 @@ body {
   background-color: var(--bs-terciario);
   color: white;
 }
+
+/*ESTILOS PARA EL FOOTER*/
 .footer{
   background-color: var(--bs-secundario);
   color: #fff;
@@ -174,6 +188,12 @@ body {
     color: inherit;
     text-decoration: none;
   }
+
+  .row>*{
+    padding-left: 0px;
+  }
+
+  /*ESTILOS PARA BOTON WATSAPP*/
   .fa-whatsapp {
     color: #4da637;
     font-size: 64px;
@@ -191,13 +211,9 @@ body {
     bottom: 8px;
     right: 8px;
   }
-  .row>*{
-    padding-left: 0px;
-  }
-
 }
 
-
+/*ESTILOS PARA LAS TARJETAS DE PRODUCTOS*/
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +254,10 @@ body {
     }
   }
 }
+
+
+/*ESTILOS DEL FORMULARIO*/
+
 .anchoFormulario{
   width: 450px;
 }
@@ -245,9 +265,6 @@ body {
   margin-bottom: 0.5rem;
   color: white;
 }
-
-
-
 .alturaTextTarea{
   field-sizing: content;
   width: 420px;
@@ -258,6 +275,9 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+
+
+/*ESTILOS PARA UN MENU CON SUBMENU*/
 
 .menu>li {
   position: relative;
@@ -297,6 +317,9 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+
+/*ESTILOS DEL API CLIENTES*/
 
 .widget-1 {
   color: white;
@@ -342,4 +365,25 @@ body {
 .carousel-item img{
   height: 100%;
   object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 8rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-carrusel{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.btn-carrusel:hover{
+  color: var(--bs-primario);
 }
