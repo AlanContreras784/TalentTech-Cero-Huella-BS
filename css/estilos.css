@@ -50,7 +50,11 @@ p {
   background-color:var(--bs-terciario) ;
 }
 
+.divBlur {
+  backdrop-filter: blur(15px);
+}
 
+/*ALGUNOS ESTILO DEL HEADER, BODY Y NAVBAR*/
 
 .header {
   position: sticky;
@@ -82,9 +86,7 @@ body {
   background-position: center;
   width: 200px;
 }
-.divBlur {
-  backdrop-filter: blur(15px);
-}
+
 
 
 /*ESTILO DE BOTONES*/
@@ -258,9 +260,6 @@ body {
 
 /*ESTILOS DEL FORMULARIO*/
 
-.anchoFormulario{
-  width: 450px;
-}
 .form-check-label {
   margin-bottom: 0.5rem;
   color: white;
