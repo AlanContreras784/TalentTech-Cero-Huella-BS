@@ -266,8 +266,14 @@ body {
 }
 .alturaTextTarea{
   field-sizing: content;
-
+  
 }
+@media screen and (max-width: 576px){
+  .alturaTextTarea{
+    width: 450px;
+  }
+}
+
 
 .error {
   color: red;
