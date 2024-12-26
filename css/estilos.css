@@ -186,14 +186,12 @@ body {
     color: var(--bs-primario);
   }
 
-  a:not([href]):not([class]), a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
-  }
+  
 
   .row>*{
     padding-left: 0px;
   }
+  
 
   /*ESTILOS PARA BOTON WATSAPP*/
   .fa-whatsapp {
