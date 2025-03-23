@@ -509,3 +509,13 @@ body {
   color: var(--bs-primario);
 }
 
+.cuenta-carrito{
+  background-color: rgba(255, 145, 0, 0.925);
+  border-radius: 100%;
+  aspect-ratio: 1;
+  display: inline-block;
+  text-align: center;
+  width: 22px;
+  line-height: 21px ;
+  font-size: 15px;
+}
