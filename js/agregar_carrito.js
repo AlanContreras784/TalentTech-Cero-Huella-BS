@@ -57,15 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             alert(`${nombre} agregado al carrito.`);
+            actualizarNumeroCarrito();
         });
     });
 
-    const cuentaCarritoElement=document.getElementById("cuenta-carrito");
     actualizarNumeroCarrito();
+    
 });
 
 
-
+const cuentaCarritoElement=document.getElementById("cuenta-carrito");
 
 function actualizarNumeroCarrito(){
     const memoria= JSON.parse(localStorage.getItem("carrito"));

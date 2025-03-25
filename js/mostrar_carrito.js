@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (carrito.length === 0) {
       tablaCarrito.innerHTML =
-        "<tr><td colspan='5'>El carrito está vacío.</td></tr>";
+        "<tr><td colspan='4'>El carrito está vacío.</td></tr>";
       totalCarrito.textContent = "0.00";
       return;
     }
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       fila.innerHTML = `
                 <td>${producto.nombre}</td>
-                <td>$${producto.precio}</td>
                 <td>$${producto.subtotal}</td>
                 <td><div class=" d-flex ">
                       <div>
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tablaCarrito.appendChild(fila);
     });
 
+    actualizarNumeroCarrito();
     // Actualizar el total
     calcularTotal();
   };

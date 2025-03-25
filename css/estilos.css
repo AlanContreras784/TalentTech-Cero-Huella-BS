@@ -284,8 +284,8 @@ body {
 /*ANIMACIONES DE LA TARJETAS - CARA IMAGEN Y REVERSO DESCRIPCION */
 .flip-card {
   background-color: transparent;
-  width: 270px;
-  height: 450px;
+  width: 250px;
+  height: 400px;
   perspective: 1000px;
   font-family: sans-serif;
   box-shadow: -11px 14px 34px -6px rgba(69, 61, 61, 0.89);
@@ -518,4 +518,9 @@ body {
   width: 22px;
   line-height: 21px ;
   font-size: 15px;
+}
+@media screen and (max-width: 576px){
+  .table{
+    width: 45%;
+  }
 }
