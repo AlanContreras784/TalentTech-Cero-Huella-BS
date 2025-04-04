@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </td>
                 <td>
-                    <button class="btn btn-danger btn-sm" data-index="${index}">Eliminar</button>
+                    <button class="btn btn-danger btn-sm px-4" data-index="${index}"><i class="fa-solid fa-trash  fa-lg" "></i></button>
                 </td>
             `;
       tablaCarrito.appendChild(fila);
